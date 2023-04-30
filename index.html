@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <script src="encriptador.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <img src="sources/aluraLogo.svg">
+    </div>
+    <div class="campoTexto">
+        <textarea id="entrada" class="texto" cols="37" rows="7" placeholder="Ingrese su texto aqui" autofocus required></textarea>
+    </div>
+    <div class="mensajito">
+        <p><img src="sources/bi_exclamation-circle-fill.svg"> Solo letras minusculas y sin acentos</p>
+    </div>
+    <div class="botones">
+        <button class="encripta" onclick="encripta()">Encriptar</button>
+        <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+    </div>
+    <div class="salida">
+    <img id="muneca" class="muneca" src="sources/Muñeco.jpg">
+    <div id="bloque" class="bloque">
+    <div class="resultado">
+        <textarea class="resultado" id="resultado" cols="30" rows="2" placeholder="Ningún mensaje fue encontrado" ></textarea>
+    </div>
+    <div id="mensaje" class="mensaje">
+        Ingrese el texto que desea encriptar o desencriptar en el area indicada
+    </div>
+    </div>
+    <button id="copia" class="copia">Copiar</button>
+    </div>
+    <footer>
+        Elaborado Por Eduin Cuellar
+    </footer>
+</body>
+</html>
